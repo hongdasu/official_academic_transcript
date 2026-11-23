@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=academic_transcript.pdf">
   <title>My Profile</title>
 </head>
 
 <body>
-  <p>If you are not redirected automatically, follow this <a href="academic_transcript.pdf" download>link to the
+  <p>If you are not redirected automatically, follow this <a id="auto-download" href="academic_transcript.pdf"
+      download>link to the
       PDF</a>.</p>
 
   <p>
@@ -20,6 +20,12 @@
   <p>
     <a href="ranking.pdf" download>Certificate of Major Ranking</a>
   </p>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('auto-download').click();
+    });
+  </script>
 </body>
 
 </html>
